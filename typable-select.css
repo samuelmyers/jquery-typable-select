@@ -1,0 +1,70 @@
+span.typable {
+	position: relative;
+	display: inline-block;
+	width: 146px;
+	*width: 148px;
+}
+
+input.typable {
+	position: absolute;
+	left: 0;
+	width: 126px;
+	height: 16px;
+	border: 1px solid #CCC;
+	font-size: 13px;
+}
+
+button.typable {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 19px;
+	height: 20px;
+	background-image: url('/css/icon.gif');
+	background-position: 0px -2px;
+	cursor: pointer;
+}
+
+button.typable, button.typable:active {
+	border: 1px solid #CCC;
+}
+
+button.typable:hover {
+	background-position: -18px -2px;
+}
+
+button.typable.selected {
+	background-position: -36px -2px;
+}
+
+ul.typable {
+	position: absolute;
+	right: 0;
+	max-height: 214px;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	list-style-type: none;
+	cursor: pointer;
+	overflow-y: auto;
+	z-index: 99;
+	padding: 0 !important;
+}
+
+ul.typable:focus {
+	outline: 0;
+}
+
+ul.typable li {
+	height: 18px;
+	margin-bottom: 2px !important;
+	padding: 2px 0 2px 4px !important;
+}
+
+ul.typable li:last {
+	margin-bottom: 0;
+}
+
+ul.typable li.selected {
+	background-color: #BBBBFF;
+}
+
